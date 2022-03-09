@@ -7,10 +7,9 @@ I created an interface for a portfolio web application using python, flask and S
 2. Open your folder in your IDE
 3. Open the terminal in your IDE
 4. Create a virtual environment
-Mac: ```python3 -m venv env```
-Windows: ```python -m venv env```
+  - Mac: ```python3 -m venv env```
+  - Windows: ```python -m venv env```
 5. Activate your environment
-Mac: ```source ./env/bin/activate```
-Windows: ```.\env\Scripts\activate```
-6. Install the required packages
-Install Flask pip install flask: ```pip install requirements.txt```
+  - Mac: ```source ./env/bin/activate```
+  - Windows: ```.\env\Scripts\activate```
+6. Install the required packages: ```pip install requirements.txt```
