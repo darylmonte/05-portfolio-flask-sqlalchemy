@@ -1,0 +1,64 @@
+{% extends 'layout.html' %}
+    {% block content %}
+    <section class="header">
+        <h1>Full Stack Developer</h1>
+        <p>Analytical and results-driven full stack developer dedicated to building and optimizing user-focused websites and applications.</p>
+        <img src="https://uploads.teamtreehouse.com/production/profile-photos/11661204/thumb_profile.jpg" alt="Daryl Monte">
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Eleven years of experience in website management and development. Adept in all aspects of website creation and implementation. Skilled in creating responsive, engaging and interactive websites. Detail-oriented and knowledgeable in various programming languages.</p>
+        <a href="{{ url_for('about') }}" class="github-btn">
+            <i class="fab fa-500px"></i>
+            Learn More About Me
+        </a>
+        <div id="triangle1"></div>
+        <div id="triangle2"></div>
+    </section>
+    <section id="skills">
+        <i class="fas fa-laptop-code"></i>
+        <h2>Skills</h2>
+        <ul>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+            <li>React</li>
+            <li>Flask</li>
+            <li>SQLAlchemy</li>
+            <li>GitHub</li>
+            <li>Visual Studio Code</li>
+            <li>Wordpress</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <div id="triangle3"></div>
+        <i class="fas fa-file-code"></i>
+        <h2>Projects</h2>
+        <div id="project-list">
+            {% for project in projects %}
+            <div id="project{{project.id}}" class="a-project">
+                <h3>{{project.project_name}}</h3>
+                <a href="{{project.github_link}}" class="github-btn" target="_blank">
+                    <i class="fab fa-github"></i>
+                    View on GitHub
+                </a>
+                <p>{{project.description}}</p>
+                <p>
+                    Skills: {{project.skills}} 
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+        <div id="triangle4"></div>
+    </section>
+    <section id="contact">
+        <i class="fas fa-paper-plane"></i>
+        <h2>Contact Me</h2>
+        <p>I love food, nature, traveling, basketball, surfing, music, dogs, video games, photography  new technology and spending time with my family.<br ><strong>They all inspire my work.</strong></p>
+        <p>
+            <i class="fas fa-envelope"></i>
+            darylmonte@gmail.com
+        </p>
+    </section>
+    {% endblock %}
