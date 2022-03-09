@@ -1,6 +1,6 @@
 # Portfolio with SQLAlchemy
 
-I created an interface for a portfolio web application using python, flask and SQLAlchemy. The home page displats my previous python projects showing the project title, a short description and a link to the github repository.
+I created an interface for a portfolio web application using python, flask and SQLAlchemy. The home page displays my previous python projects showing the project title, a short description and a link to the github repository.
 
 ## Getting Started
 1. Clone the project from github
